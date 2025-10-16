@@ -9,6 +9,16 @@ void convert(float temperature, char scale, char conversion){
     else if (scale == 'C'){
         temperature = temperature;
     }
+    else{
+        printf("You have attempted to put in an invalid temperature scale, please try again.");
+        return;
+    }
+    
+    if ((conversion != 'K') && (conversion != 'C') && (conversion != 'F')){
+        printf("You have attempted to put in an invalid temperature conversion, please try again.");
+        return;
+    }
+
     switch(conversion){
         case 'F':
         printf("Converted temperature %f %c\n", ((temperature * 1.8) + 32), conversion);
