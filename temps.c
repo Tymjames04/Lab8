@@ -23,20 +23,20 @@ void convert(float temperature, char scale, char conversion){
         break;
     }
     if (temperature < 0){
-        printf("Temperature category: Freezing");
-        printf("Weather advisory: Stay indoors and use a heater");
+        printf("Temperature category: Freezing\n");
+        printf("Weather advisory: Stay indoors and use a heater\n");
     }else if (temperature < 10){
-        printf("Temperature category: Cold");
-        printf("Weather advisory: Wear warm layers");
+        printf("Temperature category: Cold\n");
+        printf("Weather advisory: Wear warm layers\n");
     }else if (temperature < 25){
-        printf("Temperature category: Comfortable");
-        printf("Weather advisory: Enjoy the nice weather");
+        printf("Temperature category: Comfortable\n");
+        printf("Weather advisory: Enjoy the nice weather\n");
     }else if (temperature < 35){
-        printf("Temperature category: Hot");
-        printf("Weather advisory: Drink plenty of water");
+        printf("Temperature category: Hot\n");
+        printf("Weather advisory: Drink plenty of water\n");
     }else{
-        printf("Temperature category: Extreme heat");
-        printf("Weather advisory: Stay indoors and use a fan or air conditioning");
+        printf("Temperature category: Extreme heat\n");
+        printf("Weather advisory: Stay indoors and use a fan or air conditioning\n");
     }
 }
 int main(){
@@ -44,10 +44,10 @@ int main(){
     char scale;
     char conversion;
     printf("Please input the temperature:\n");
-    scanf("%f", temperature);
+    scanf("%f", &temperature);
     printf("What scale is this temp (F, C or K)?:\n");
-    scanf(" %c", scale);
+    scanf(" %c", &scale);
     printf("What scale would you like to convert to (F, C or K)?:\n");
-    scanf(" %c", conversion);
+    scanf(" %c", &conversion);
     convert(temperature, scale, conversion);
 }

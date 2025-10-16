@@ -18,4 +18,5 @@ temps.o: temps.c
 	$(CC) $(CFLAGS) temps.c
 
 clean:
-
+	rm temps
+	rm nfl
