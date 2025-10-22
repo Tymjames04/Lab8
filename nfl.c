@@ -1,3 +1,4 @@
+//include the standard input/output library
 #include <stdio.h>
 //array will store [TD+2pt, TD+FG, TD, 3pt FG, Saftey]
 int scores[5];
